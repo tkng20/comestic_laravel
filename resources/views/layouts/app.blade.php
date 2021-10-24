@@ -14,7 +14,6 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     
     <!-- Styles -->
@@ -155,8 +154,6 @@
             </div>
         </nav> --}}
         <!--menu-->
-        <!--menu-->
-            <!-- menu -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
 
             <a class="navbar-brand" href="./index.html"><img src="./asset/img/logo.png" alt="" width="25%"></a>
@@ -200,9 +197,11 @@
                 </form>
             </div>
         </nav>
+
         <main class="py-4">
             @yield('content')
         </main>
+
         <footer>
             <div class="card">
                 <div class="card-footer">
@@ -215,6 +214,9 @@
                 </div>
               </div>
         </footer>
+
     </div>
+    <script src="/asset/js/jquery-3.3.1.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
