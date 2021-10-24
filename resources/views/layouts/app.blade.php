@@ -205,7 +205,7 @@
         </main>
         <footer>
             <div class="card">
-                <div class="card-header">
+                <div class="card-footer">
                   Featured
                 </div>
                 <div class="card-body">
