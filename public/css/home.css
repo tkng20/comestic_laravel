@@ -15,49 +15,6 @@
     src: url("Open_Sans/OpenSans-Light.ttf");
 }
 
-
-/*xử lý menu*/
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    background-color: #70b19f;
-    color: #FFF;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.others {
-    display: flex;
-    padding: 10px;
-    padding-right: 20px;
-}
-
-.others>li {
-    padding: 0 12px;
-    list-style: none;
-    font-size: 20px;
-}
-
-.navbar-brand {
-    margin-right: -11rem !important;
-    padding-left: 14px !important;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 2rem !important;
-    padding-left: 0.5rem !important;
-}
-
-
 /*slider*/
 
 #btn-shop {
@@ -197,15 +154,15 @@
 }
 
 .carousel-control-next-icon {
-    background-image: url("asset/img/phai-removebg-preview.png") !important;
+    background-image: url("asset/img/phai-removebg-preview.jpg") !important;
 }
 
 .carousel-control-prev-icon {
-    background-image: url("./asset/img/kisspng-computer-icons-arrow-button-clip-art-swipe-5abeb2a88c62c3.559683471522447016575-removebg-preview.png") !important;
+    background-image: url("./asset/img/kisspng-computer-icons-arrow-button-clip-art-swipe-5abeb2a88c62c3.559683471522447016575-removebg-preview.jpg") !important;
 }
 
-.carousel-control-next,
-.carousel-control-prev {
+.carousel-control-next home2,
+.carousel-control-prev home1 {
     width: 5% !important;
 }
 

@@ -1,0 +1,39 @@
+/*xử lý menu*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #70b19f;
+    color: #FFF;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.others {
+    display: flex;
+    padding: 10px;
+    padding-right: 20px;
+}
+
+.others>li {
+    padding: 0 12px;
+    list-style: none;
+    font-size: 20px;
+}
+
+.navbar-brand {
+    margin-right: -11rem !important;
+    padding-left: 14px !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2rem !important;
+    padding-left: 0.5rem !important;
+}

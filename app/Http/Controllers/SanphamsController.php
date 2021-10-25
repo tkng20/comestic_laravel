@@ -13,7 +13,7 @@ class SanphamsController extends Controller
      */
     public function index()
     {
-        return view('sanphams.index');
+        return view('sanphams.productlist');
     }
 
     /**
@@ -45,7 +45,7 @@ class SanphamsController extends Controller
      */
     public function show($id)
     {
-        //
+        // 
     }
 
     /**

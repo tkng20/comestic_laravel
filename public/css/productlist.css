@@ -1,0 +1,268 @@
+body {
+	background: #e2eaef;
+	font-family: "Open Sans", sans-serif;
+    }
+h2 {
+	color: #000;
+	font-size: 26px;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	margin: 30px 0 60px;
+}
+h2::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 4px;
+	border-radius: 1px;
+	background: #70b19f;
+	left: 0;
+	right: 0;
+	bottom: -20px;
+}
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.carousel .item {
+	color: #747d89;
+	min-height: 325px;
+	text-align: center;
+	overflow: hidden;
+}
+.carousel .thumb-wrapper {
+	padding: 25px 15px;
+	background: #fff;
+	border-radius: 6px;
+	text-align: center;
+	position: relative;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+.carousel .item .img-box {
+	height: 120px;
+	margin-bottom: 20px;
+	width: 100%;
+	position: relative;
+}
+.carousel .item img {	
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+.carousel .item h4 {
+	font-size: 18px;
+}
+.carousel .item h4, .carousel .item p, .carousel .item ul {
+	margin-bottom: 5px;
+}
+.carousel .thumb-content .btn {
+	color: #70b19f;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: none;
+	border: 1px solid #70b19f;
+	padding: 6px 14px;
+	margin-top: 5px;
+	line-height: 16px;
+	border-radius: 20px;
+}
+.carousel .thumb-content .btn:hover, .carousel .thumb-content .btn:focus {
+	color: #fff;
+	background: #70b19f;
+	box-shadow: none;
+}
+.carousel .thumb-content .btn i {
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.carousel .item-price {
+	font-size: 13px;
+	padding: 2px 0;
+}
+.carousel .item-price strike {
+	opacity: 0.7;
+	margin-right: 5px;
+}
+.carousel-control-prev, .carousel-control-next {
+	height: 44px;
+	width: 40px;
+	background: #70b19f;	
+	margin: auto 0;
+	border-radius: 4px;
+	opacity: 0.8;
+}
+.carousel-control-prev:hover, .carousel-control-next:hover {
+	background: #70b19f;
+	opacity: 1;
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 36px;
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	margin: -19px 0 0 0;
+	z-index: 5;
+	left: 0;
+	right: 0;
+	color: #fff;
+	text-shadow: none;
+	font-weight: bold;
+}
+.carousel-control-prev i {
+	margin-left: -2px;
+}
+.carousel-control-next i {
+	margin-right: -4px;
+}		
+.carousel-indicators {
+	bottom: -50px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 4px;
+	border-radius: 50%;
+	border: none;
+}
+.carousel-indicators li {	
+	background: rgba(0, 0, 0, 0.2);
+}
+.carousel-indicators li.active {	
+	background: rgba(0, 0, 0, 0.6);
+}
+.carousel .wish-icon {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 99;
+	cursor: pointer;
+	font-size: 16px;
+	color: #abb0b8;
+}
+.carousel .wish-icon .fa-heart {
+	color: #ff6161;
+}
+.star-rating li {
+	padding: 0;
+}
+.star-rating i {
+	font-size: 14px;
+	color: #ffc000;
+}
+
+
+
+.card-product {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-title {
+    margin-bottom: 0.25rem;
+}
+
+.card-text .product-price {
+    position: relative;
+}
+
+.del-price {
+    text-decoration: line-through;
+}
+
+.new-price {
+    color: #f90;
+    position: absolute;
+    right: 0.5rem;
+}
+
+.btn-add-to-cart {
+    background-color: #3C7363 !important;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #f90 !important;
+}
+
+.btn-detail {
+    background-color: #70b19f !important;
+    border: 1px solid #70b19f!important;
+    color: white !important;
+}
+
+.btn-detail:hover {
+    color: white !important;
+    background-color: #3C7363 !important;
+    color: #FFF;
+}
+
+.sale-sticky {
+    color: white;
+    background-color: #f90;
+    display: block;
+    text-align: center;
+    width: 120px;
+    position: absolute;
+    top: 15px;
+    right: -24px;
+    transform: rotate(45deg);
+}
+
+#new {
+    display: block;
+    text-align: center;
+    width: 53px;
+    position: absolute;
+    top: 9px;
+    right: 0px;
+    font-size: 20px;
+}
+
+#new {
+    background-color: #8FD9C4 !important;
+    color: white;
+    border-radius: 2px !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("asset/img/phai-removebg-preview.jpg") !important;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("./asset/img/kisspng-computer-icons-arrow-button-clip-art-swipe-5abeb2a88c62c3.559683471522447016575-removebg-preview.jpg") !important;
+}
+
+.carousel-control-next home2,
+.carousel-control-prev home1 {
+    width: 5% !important;
+}
+
+.carousel-indicators .active {
+    background-color: #bac0c5 !important;
+}
+
+.carousel-indicators li {
+    background-color: #312d2d !important;
+}
+
+.fa-heart {
+    font-size: 20px;
+    right: 10px;
+    padding-left: 38px;
+}
+
+.fa-heart:hover {
+    color: red;
+}

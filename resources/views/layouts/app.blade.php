@@ -11,74 +11,15 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./asset/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css"> 
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-
-    <style>
-        @font-face {
-            font-family: Open Sans;
-            src: url("Open_Sans/OpenSans-Light.ttf");
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            border-radius: 0 !important;
-            font-family: Open Sans;
-        }
-        
-        @font-face {
-            font-family: Open Sans;
-            src: url("Open_Sans/OpenSans-Light.ttf");
-        }
-        /*xử lý menu*/
-        
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-        
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            z-index: 1;
-            background-color: #70b19f;
-            color: #FFF;
-        }
-        
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        
-        .others {
-            display: flex;
-            padding: 10px;
-            padding-right: 20px;
-        }
-        
-        .others>li {
-            padding: 0 12px;
-            list-style: none;
-            font-size: 20px;
-        }
-        
-        .navbar-brand {
-            margin-right: -11rem !important;
-            padding-left: 14px !important;
-        }
-        
-        .navbar-expand-lg .navbar-nav .nav-link {
-            padding-right: 2rem !important;
-            padding-left: 0.5rem !important;
-        }
-    </style>
 </head>
 <body>
     <div id="app">
@@ -218,20 +159,7 @@
         <main class="py-4">
             @yield('content')
         </main>
-
-        <footer>
-            <div class="card">
-                <div class="card-footer">
-                  Featured
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-        </footer>
-
+        
     </div>
     <script src="/asset/js/jquery-3.3.1.min.js"></script>
     <script src="/bootstrap/js/bootstrap.min.js"></script>

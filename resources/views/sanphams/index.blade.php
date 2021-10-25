@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('content')
 <!-- slid -->
 <div id="carouselExampleIndicators" class="carousel slide mt-1" data-ride="carousel">
