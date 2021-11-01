@@ -13,7 +13,7 @@ class SanphamsController extends Controller
      */
     public function index()
     {
-        return view('pages.productlist');
+        return view('pages.product-detail');
     }
 
     /**
