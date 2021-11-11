@@ -51,13 +51,13 @@
 													// dd($photo);
 													@endphp --}}
 													{{-- @foreach($photo as $data) --}}
-														<li data-thumb="0" rel="adjustX:10, adjustY:">
+														<li data-thumb="storage/photo/sanpham/sp1.jpg" rel="adjustX:10, adjustY:">
 															<img src="storage/photo/sanpham/sp1.jpg" alt="">
 														</li>
-                                                        <li data-thumb="0" rel="adjustX:10, adjustY:">
+                                                        <li data-thumb="storage/photo/sanpham/sp2.jpg" rel="adjustX:10, adjustY:">
 															<img src="storage/photo/sanpham/sp2.jpg" alt="">
 														</li>
-                                                        <li data-thumb="0" rel="adjustX:10, adjustY:">
+                                                        <li data-thumb="storage/photo/sanpham/sp3.jpg" rel="adjustX:10, adjustY:">
 															<img src="storage/photo/sanpham/sp3.jpg" alt="">
 														</li>
 													{{-- @endforeach --}}

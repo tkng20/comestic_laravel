@@ -16,6 +16,4 @@ use App\Http\Controllers\SanphamsController;
 
 Auth::routes();
 
-Route::get('/', [SanphamsController::class, 'index']);
-Route::resource('sanphams',SanphamsController::class);
-
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
