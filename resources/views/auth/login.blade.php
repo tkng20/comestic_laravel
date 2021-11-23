@@ -1,8 +1,20 @@
-@extends('layouts.app2')
+<!DOCTYPE html>
+<html lang="en">
 
-@section('content')
-<div class="img js-fullheight" style="background-image: url({{ asset('backend/assets/login_form/images/bg.jpg') }});">
-    <section class="ftco-section">
+<head>
+    <title>E-SHOP || Login Page</title>
+    <!--Login-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{{ asset('backend/assets/login_form/css/style.css') }}">
+
+</head>
+{{-- @section('content') --}}
+
+<body class="img js-fullheight" style="background-image: url({{ asset('backend/assets/login_form/images/bg.jpg') }});">
+    {{-- <section>class="img js-fullheight" style="background-image: url({{ asset('backend/assets/login_form/images/bg.jpg') }});"> --}} <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center mb-5">
@@ -17,8 +29,9 @@
                             @csrf
                             <!--Email-->
                             <div class="form-group">
-                                <input id="email" type="email" class="form-control" value="{{ old('email') }}"
-                                    placeholder="Email" required autocomplete="email" autofocus>
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"
+                                    name="email" value="{{ old('email') }}" placeholder="Email" required
+                                    autocomplete="email" autofocus>
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -39,8 +52,8 @@
                             </div>
                             <!--Sign in-->
                             <div class="form-group">
-                                <button type="submit" class="form-control btn btn-primary submit px-3"
-                                    style="color: #fff">{{ __('Login') }}
+                                <button type="submit"
+                                    class="form-control btn btn-primary submit px-3">{{ __('Login') }}
                                 </button>
                             </div>
                             <!--Other-->
@@ -66,5 +79,20 @@
             </div>
         </div>
     </section>
-</div>
-@endsection
+
+    {{-- @endsection --}}
+    <!--Login -->
+    {{-- <script src="{{ asset('backend/assets/login_form/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('backend/assets/login_form/js/popper.js') }}"></script>
+    <script src="{{ asset('backend/assets/login_form/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('backend/assets/login_form/js/main.js') }}"></script> --}}
+    {{-- </body>
+
+</html> --}}
+    <script src="{{ asset('backend/assets/login_form/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('backend/assets/login_form/js/popper.js') }}"></script>
+    <script src="{{ asset('backend/assets/login_form/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('backend/assets/login_form/js/main.js') }}"></script>
+</body>
+
+</html>

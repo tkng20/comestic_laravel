@@ -84,11 +84,6 @@
         <main class="py-4">
             @yield('content')
         </main>
-
-        <script src="{{ asset('backend/assets/login_form/js/jquery.min.js') }}"></script>
-        <script src="{{ asset('backend/assets/login_form/js/popper.js') }}"></script>
-        <script src="{{ asset('backend/assets/login_form/js/bootstrap.min.js') }}"></script>
-        <script src="{{ asset('backend/assets/login_form/js/main.js') }}"></script>
     </div>
 </body>
 </html>
