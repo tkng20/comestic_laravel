@@ -17,3 +17,7 @@ use App\Http\Controllers\SanphamsController;
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::group(['prefix' => '/employee', 'middleware' => 'auth'], function () {
+    Route::get('/', [App\Http\Controllers\EmployeeController::class, 'employee'])->name('employee');
+});
