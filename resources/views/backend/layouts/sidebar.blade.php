@@ -1,139 +1,385 @@
-<!-- menu profile quick info -->
-<div class="profile clearfix">
-    <div class="profile_pic">
-        <img src="{{ asset('backend/assets/productions/images/img.jpg') }}" alt="..." class="img-circle profile_img">
-    </div>
-    <div class="profile_info">
-        <span>Welcome,</span>
-        <h2>John Doe</h2>
-    </div>
-</div>
-<!-- /menu profile quick info -->
-
-<br />
-
-<!-- sidebar menu -->
-<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-    <div class="menu_section">
-        <h3>General</h3>
-        <ul class="nav side-menu">
-            <li><a><i class="fa fa-home"></i> Dashboard <span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                    <li><a href="index.html">Dashboard</a></li>
-                    <li><a href="index2.html">Dashboard2</a></li>
-                    <li><a href="index3.html">Dashboard3</a></li>
-                </ul>
-            </li>
-            <li><a><i class="fa fa-picture-o"></i> Banners <span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                </ul>
-            </li>
-            <li><a><i class="fa fa-envelope"></i> Messages<span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                </ul>
-            </li>
-            <li><a><i class="fa fa-bell"></i> Notifications<span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                </ul>
-            </li>
-            <li><a><i class="fa fa-gear"></i> Setting<span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div class="menu_section">
-        <h3>Products Management</h3>
-        <ul class="nav side-menu">
-            <li><a><i class="fa fa-list-alt"></i>Brands<span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                </ul>
-            </li>
-            <li><a><i class="fa fa-list-alt"></i>Categories<span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                </ul>
-            </li>
-            <li><a><i class="fa fa-list-alt"></i>Coupons<span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                </ul>
-            </li>
-            <li><a><i class="fa fa-list-alt"></i> Products<span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                </ul>
-            </li>
-            <li><a><i class="fa fa-list-alt"></i> Product Attributes<span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                </ul>
-            </li>
-            <li><a><i class="fa fa-comments-o"></i> Product Reviews<span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                </ul>
-            </li>
-            <li><a><i class="fa fa-shopping-cart"></i> Carts<span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                </ul>
-            </li>
-            <li><a><i class="fa fa-money-bill-alt"></i> Orders<span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                </ul>
-            </li>
-            <li><a><i class="fa fa-motorcycle"></i> Shippings<span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div class="menu_section">
-        <h3>Post</h3>
-        <ul class="nav side-menu">
-            <li><a><i class="fa fa-list-alt"></i> Post Categories<span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                </ul>
-            </li>
-            <li><a><i class="fa fa-list-alt"></i> Post Tags<span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                </ul>
-            </li>
-            <li><a><i class="fa fa-list-alt"></i> Posts<span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                </ul>
-            </li>
-            <li><a><i class="fa fa-comments-o"></i> Post Comments<span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                </ul>
-            </li>
-        </ul>
-    </div>
-
-    <div class="menu_section">
-        <h3>Human</h3>
-        <ul class="nav side-menu">
-            <li><a><i class="fa fa-user"></i> Customers<span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                </ul>
-            </li>
-            <li><a><i class="fa fa-user"></i> Employees<span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                </ul>
-            </li>
-        </ul>
-    </div>
-
-</div>
-<!-- /sidebar menu -->
-<!-- /menu footer buttons -->
-<div class="sidebar-footer hidden-small">
-    <a data-toggle="tooltip" data-placement="top" title="Settings">
-        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+<li class="pc-item pc-caption">
+    <label>Home Management</label>
+</li>
+<li class="pc-item">
+    <a href="index.html" class="pc-link ">
+        <span class="pc-micon">
+            <i class="material-icons-two-tone">
+                home
+            </i>
+        </span>
+        <span class="pc-mtext">
+            Dashboard
+        </span>
     </a>
-    <a data-toggle="tooltip" data-placement="top" title="FullScreen">
-        <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+</li>
+<li class="pc-item pc-hasmenu">
+    <a href="#" class="pc-link ">
+        <span class="pc-micon">
+            <i class="material-icons-two-tone">
+                image
+            </i>
+        </span>
+        <span class="pc-mtext">
+            Banners
+        </span>
+        <span class="pc-arrow">
+            <i data-feather="chevron-right"></i>
+        </span>
     </a>
-    <a data-toggle="tooltip" data-placement="top" title="Lock">
-        <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+    <ul class="pc-submenu">
+        <li class="pc-item"><a class="pc-link" href="{{ route('banner.index') }}">All Banners</a></li>
+        <li class="pc-item"><a class="pc-link" href="{{ route('banner.create') }}">Add Banner</a></li>
+    </ul>
+</li>
+<li class="pc-item pc-caption">
+    <label>Product Management</label>
+</li>
+<li class="pc-item pc-hasmenu">
+    <a href="#" class="pc-link ">
+        <span class="pc-micon">
+            <i class="material-icons-two-tone">
+                business_center
+            </i>
+        </span>
+        <span class="pc-mtext">
+            Brands
+        </span>
+        <span class="pc-arrow">
+            <i data-feather="chevron-right"></i>
+        </span>
     </a>
-    <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
-        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+    <ul class="pc-submenu">
+        <li class="pc-item"><a class="pc-link" href="{{ route('brand.index') }}">All Brands</a>
+        </li>
+        <li class="pc-item"><a class="pc-link" href="{{ route('brand.create') }}">Add Brand</a>
+        </li>
+    </ul>
+</li>
+<li class="pc-item pc-hasmenu">
+    <a href="#" class="pc-link ">
+        <span class="pc-micon">
+            <i class="material-icons-two-tone">
+                business_center
+            </i>
+        </span>
+        <span class="pc-mtext">
+            Categories
+        </span>
+        <span class="pc-arrow">
+            <i data-feather="chevron-right"></i>
+        </span>
     </a>
-</div>
-<!-- /menu footer buttons -->
+    <ul class="pc-submenu">
+        <li class="pc-item"><a class="pc-link" href="{{ route('category.index') }}">All Categories</a>
+        </li>
+        <li class="pc-item"><a class="pc-link" href="{{ route('category.create') }}">Add Category</a>
+        </li>
+    </ul>
+</li>
+<li class="pc-item pc-hasmenu">
+    <a href="#" class="pc-link ">
+        <span class="pc-micon">
+            <i class="material-icons-two-tone">
+                book
+            </i>
+        </span>
+        <span class="pc-mtext">
+            Coupons
+        </span>
+        <span class="pc-arrow">
+            <i data-feather="chevron-right"></i>
+        </span>
+    </a>
+    <ul class="pc-submenu">
+        <li class="pc-item"><a class="pc-link" href="{{ route('coupon.index') }}">All Coupons</a>
+        </li>
+        <li class="pc-item"><a class="pc-link" href="{{ route('coupon.create') }}">Add Coupon</a>
+        </li>
+    </ul>
+</li>
+<li class="pc-item pc-hasmenu">
+    <a href="#" class="pc-link ">
+        <span class="pc-micon">
+            <i class="material-icons-two-tone">
+                list_alt
+            </i>
+        </span>
+        <span class="pc-mtext">
+            Products
+        </span>
+        <span class="pc-arrow">
+            <i data-feather="chevron-right"></i>
+        </span>
+    </a>
+    <ul class="pc-submenu">
+        <li class="pc-item"><a class="pc-link" href="{{ route('product.index') }}">All Products</a>
+        </li>
+        <li class="pc-item"><a class="pc-link" href="{{ route('product.create') }}">Add Product</a>
+        </li>
+    </ul>
+</li>
+<li class="pc-item pc-hasmenu">
+    <a href="#" class="pc-link ">
+        <span class="pc-micon">
+            <i class="material-icons-two-tone">
+                list_alt
+            </i>
+        </span>
+        <span class="pc-mtext">
+            Product Attributes
+        </span>
+        <span class="pc-arrow">
+            <i data-feather="chevron-right"></i>
+        </span>
+    </a>
+</li>
+<li class="pc-item pc-hasmenu">
+    <a href="#" class="pc-link ">
+        <span class="pc-micon">
+            <i class="material-icons-two-tone">
+                edit
+            </i>
+        </span>
+        <span class="pc-mtext">
+            Product Reviews
+        </span>
+        <span class="pc-arrow">
+            <i data-feather="chevron-right"></i>
+        </span>
+    </a>
+</li>
+<li class="pc-item pc-hasmenu">
+    <a href="#" class="pc-link ">
+        <span class="pc-micon">
+            <i class="material-icons-two-tone">
+                list_alt
+            </i>
+        </span>
+        <span class="pc-mtext">
+            Carts
+        </span>
+        <span class="pc-arrow">
+            <i data-feather="chevron-right"></i>
+        </span>
+    </a>
+</li>
+<li class="pc-item pc-hasmenu">
+    <a href="#" class="pc-link ">
+        <span class="pc-micon">
+            <i class="material-icons-two-tone">
+                list_alt
+            </i>
+        </span>
+        <span class="pc-mtext">
+            Orders
+        </span>
+        <span class="pc-arrow">
+            <i data-feather="chevron-right"></i>
+        </span>
+    </a>
+</li>
+<li class="pc-item pc-hasmenu">
+    <a href="#" class="pc-link ">
+        <span class="pc-micon">
+            <i class="material-icons-two-tone">
+                map
+            </i>
+        </span>
+        <span class="pc-mtext">
+            Shippings
+        </span>
+        <span class="pc-arrow">
+            <i data-feather="chevron-right"></i>
+        </span>
+    </a>
+</li>
+<li class="pc-item pc-caption">
+    <label>Post Management</label>
+</li>
+<li class="pc-item pc-hasmenu">
+    <a href="#" class="pc-link ">
+        <span class="pc-micon">
+            <i class="material-icons-two-tone">
+                business_center
+            </i>
+        </span>
+        <span class="pc-mtext">
+            Post Categories
+        </span>
+        <span class="pc-arrow">
+            <i data-feather="chevron-right"></i>
+        </span>
+    </a>
+    <ul class="pc-submenu">
+        <li class="pc-item"><a class="pc-link" href="{{ route('post_category.index') }}">All Post
+                Categories</a>
+        </li>
+        <li class="pc-item"><a class="pc-link" href="{{ route('post_category.create') }}">Add Post
+                Category</a>
+        </li>
+    </ul>
+</li>
+<li class="pc-item pc-hasmenu">
+    <a href="#" class="pc-link ">
+        <span class="pc-micon">
+            <i class="material-icons-two-tone">
+                list_alt
+            </i>
+        </span>
+        <span class="pc-mtext">
+            Post Tags
+        </span>
+        <span class="pc-arrow">
+            <i data-feather="chevron-right"></i>
+        </span>
+    </a>
+    <ul class="pc-submenu">
+        <li class="pc-item"><a class="pc-link" href="{{ route('post_tag.index') }}">All Post
+                Tags</a>
+        </li>
+        <li class="pc-item"><a class="pc-link" href="{{ route('post_tag.create') }}">Add Post
+                Tag</a>
+        </li>
+    </ul>
+</li>
+<li class="pc-item pc-hasmenu">
+    <a href="#" class="pc-link ">
+        <span class="pc-micon">
+            <i class="material-icons-two-tone">
+                list_alt
+            </i>
+        </span>
+        <span class="pc-mtext">
+            Posts
+        </span>
+        <span class="pc-arrow">
+            <i data-feather="chevron-right"></i>
+        </span>
+    </a>
+    <ul class="pc-submenu">
+        <li class="pc-item"><a class="pc-link" href="{{ route('post.index') }}">All Posts</a>
+        </li>
+        <li class="pc-item"><a class="pc-link" href="{{ route('post.create') }}">Add Post</a>
+        </li>
+    </ul>
+</li>
+<li class="pc-item pc-hasmenu">
+    <a href="#" class="pc-link ">
+        <span class="pc-micon">
+            <i class="material-icons-two-tone">
+                list_alt
+            </i>
+        </span>
+        <span class="pc-mtext">
+            Post Comments
+        </span>
+        <span class="pc-arrow">
+            <i data-feather="chevron-right"></i>
+        </span>
+    </a>
+</li>
+<li class="pc-item pc-caption">
+    <label>Human Management</label>
+</li>
+<li class="pc-item pc-hasmenu">
+    <a href="{{ route('user.create') }}" class="pc-link ">
+        <span class="pc-micon">
+            <i class="material-icons-two-tone">
+                https
+            </i>
+        </span>
+        <span class="pc-mtext">
+            Add User
+        </span>
+    </a>
+</li>
+<li class="pc-item pc-hasmenu">
+    <a href="{{ route('role_user.index') }}" class="pc-link ">
+        <span class="pc-micon">
+            <i class="material-icons-two-tone">
+                https
+            </i>
+        </span>
+        <span class="pc-mtext">
+            Users
+        </span>
+    </a>
+</li>
+<li class="pc-item pc-hasmenu">
+    <a href="{{ route('role_admin.index') }}" class="pc-link ">
+        <span class="pc-micon">
+            <i class="material-icons-two-tone">
+                https
+            </i>
+        </span>
+        <span class="pc-mtext">
+            Admins
+        </span>
+    </a>
+</li>
+<li class="pc-item pc-caption">
+    <label>Setting Management</label>
+</li>
+<li class="pc-item pc-hasmenu">
+    <a href="#" class="pc-link ">
+        <span class="pc-micon">
+            <i class="material-icons-two-tone">
+                settings
+            </i>
+        </span>
+        <span class="pc-mtext">
+            Settings
+        </span>
+        <span class="pc-arrow">
+            <i data-feather="chevron-right"></i>
+        </span>
+    </a>
+</li>
+<li class="pc-item pc-hasmenu">
+    <a href="#" class="pc-link ">
+        <span class="pc-micon">
+            <i class="material-icons-two-tone">
+                edit
+            </i>
+        </span>
+        <span class="pc-mtext">
+            Messages
+        </span>
+        <span class="pc-arrow">
+            <i data-feather="chevron-right"></i>
+        </span>
+    </a>
+</li>
+<li class="pc-item pc-hasmenu">
+    <a href="#" class="pc-link ">
+        <span class="pc-micon">
+            <i class="material-icons-two-tone">
+                edit
+            </i>
+        </span>
+        <span class="pc-mtext">
+            Notifications
+        </span>
+        <span class="pc-arrow">
+            <i data-feather="chevron-right"></i>
+        </span>
+    </a>
+</li>
+<li class="pc-item pc-caption">
+    <label>Profile Management</label>
+</li>
+<li class="pc-item pc-hasmenu">
+    <a href="#!" class="pc-link"><span class="pc-micon">
+            <i class="material-icons-two-tone">
+                https
+            </i>
+        </span>
+        <span class="pc-mtext">
+            Profile
+        </span>
+        <span class="pc-arrow">
+            <i data-feather="chevron-right"></i>
+        </span>
+    </a>
+</li>

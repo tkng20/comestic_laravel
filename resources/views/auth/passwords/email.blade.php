@@ -25,11 +25,9 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="{{ asset('backend/assets/login_form/css/style.css') }}">
-</head>
+    <link rel="stylesheet" href="{{ asset('backend/login_form/css/style.css') }}">
 
-<body class="img js-fullheight"
-    style="background-image: url({{ asset('backend/assets/login_form/images/reset_bg.jpg') }});">
+<body class="img js-fullheight" style="background-image: url({{ asset('backend/login_form/images/reset_bg.jpg') }} );">
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
@@ -86,10 +84,10 @@
             </div>
         </div>
     </section>
-    <script src="{{ asset('backend/assets/login_form/js/jquery.min.js') }}"></script>
-    <script src="{{ asset('backend/assets/login_form/js/popper.js') }}"></script>
-    <script src="{{ asset('backend/assets/login_form/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('backend/assets/login_form/js/main.js') }}"></script>
+    <script src="{{ asset('backend/login_form/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('backend/login_form/js/popper.js') }}"></script>
+    <script src="{{ asset('backend/login_form/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('backend/login_form/js/main.js') }}"></script>
 </body>
 
 </html>

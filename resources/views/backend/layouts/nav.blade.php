@@ -1,119 +1,133 @@
-<!-- top navigation -->
-<div class="top_nav">
-    <div class="nav_menu">
-        <div class="nav toggle">
-            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+<!-- [ navigation menu ] start -->
+<nav class="pc-sidebar ">
+    <div class="navbar-wrapper">
+        <div class="m-header">
+            <a href="{{ route('admin') }}" class="b-brand">
+                <!-- ========   change your logo hear   ============ -->
+                <img src="{{ asset('backend/Kit_Template/assets/images/logo.svg') }}" alt="" class="logo logo-lg">
+                <img src="{{ asset('backend/Kit_Template/assets/images/logo-sm.svg') }}" alt="" class="logo logo-sm">
+            </a>
         </div>
-        <nav class="nav navbar-nav">
-            <ul class=" navbar-right">
-                <li class="nav-item dropdown open" style="padding-left: 15px;">
-                    <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown"
-                        data-toggle="dropdown" aria-expanded="false">
-                        <img src="{{ asset('backend/assets/productions/images/img.jpg') }}" alt="">John Doe
-                    </a>
-                    <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="javascript:;">
-                            <i class="fa fa-user pull-right"></i>
-                            Profile</a>
-                        <a class="dropdown-item" href="javascript:;">
-                            <i class="fa fa-gear pull-right"></i>
-                            Settings
-                        </a>
-                        <a class="dropdown-item" href="">
-                            <i class="fa fa-key  pull-right"></i>
-                            Change Password
-                        </a>
-                        <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                            <i class="fa fa-sign-out pull-right"></i> Log
-                            Out
-                        </a>
+        <div class="navbar-content">
+            <ul class="pc-navbar">
+                @include('backend.layouts.sidebar')
 
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- [ navigation menu ] end -->
+
+<!-- [ Header ] start -->
+<!---->
+{{-- <header class="pc-header ">
+    <div class="header-wrapper">
+        <div class="ml-auto">
+            <ul class="list-unstyled navbar-right">
+                <li class="dropdown pc-h-item ">
+                    <a class="pc-head-link dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#"
+                        role="button" aria-haspopup="false" aria-expanded="false">
+                        <img src="{{ asset('backend/Kit_Template/assets/images/user/avatar-2.jpg') }}"
+                            alt="user-image" class="user-avtar">
+                        <span>
+                            <span class="user-name">Joseph William</span>
+                            <span class="user-desc">Administrator</span>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right pc-h-dropdown">
+                        <!--Account-->
+                        <a href="#!" class="dropdown-item">
+                            <i class="material-icons-two-tone">account_circle</i>
+                            <span>My Account</span>
+                        </a>
+                        <!--Setting-->
+                        <a href="#!" class="dropdown-item">
+                            <i class="material-icons-two-tone">settings</i>
+                            <span>Settings</span>
+                        </a>
+                        <!--Support-->
+                        <a href="#!" class="dropdown-item">
+                            <i class="material-icons-two-tone">support</i>
+                            <span>Support</span>
+                        </a>
+                        <!--Log out-->
+                        <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                            <i class="material-icons-two-tone">chrome_reader_mode</i>
+                            <span>Logout</span>
+                        </a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                             @csrf
                         </form>
                     </div>
                 </li>
-
-                <li role="presentation" class="nav-item dropdown open">
-                    <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1"
-                        data-toggle="dropdown" aria-expanded="false">
-                        <i class="fa fa-envelope-o"></i>
-                        <span class="badge bg-green">6</span>
+                <li class="dropdown pc-h-item">
+                    <a class=" pc-head-link dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#"
+                        role="button" aria-haspopup="false" aria-expanded="false">
+                        <i class="material-icons-two-tone">search</i>
+                        <input type="search" class="form-control border-0 shadow-none" placeholder="Search here. . .">
                     </a>
-                    <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
-                        <li class="nav-item">
-                            <a class="dropdown-item">
-                                <span class="image"><img
-                                        src="{{ asset('backend/assets/productions/images/img.jpg') }}"
-                                        alt="Profile Image" /></span>
-                                <span>
-                                    <span>John Smith</span>
-                                    <span class="time">3 mins ago</span>
-                                </span>
-                                <span class="message">
-                                    Film festivals used to be do-or-die moments for movie makers. They were
-                                    where...
-                                </span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="dropdown-item">
-                                <span class="image"><img
-                                        src="{{ asset('backend/assets/productions/images/img.jpg') }}"
-                                        alt="Profile Image" /></span>
-                                <span>
-                                    <span>John Smith</span>
-                                    <span class="time">3 mins ago</span>
-                                </span>
-                                <span class="message">
-                                    Film festivals used to be do-or-die moments for movie makers. They were
-                                    where...
-                                </span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="dropdown-item">
-                                <span class="image"><img
-                                        src="{{ asset('backend/assets/productions/images/img.jpg') }}"
-                                        alt="Profile Image" /></span>
-                                <span>
-                                    <span>John Smith</span>
-                                    <span class="time">3 mins ago</span>
-                                </span>
-                                <span class="message">
-                                    Film festivals used to be do-or-die moments for movie makers. They were
-                                    where...
-                                </span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="dropdown-item">
-                                <span class="image"><img
-                                        src="{{ asset('backend/assets/productions/images/img.jpg') }}"
-                                        alt="Profile Image" /></span>
-                                <span>
-                                    <span>John Smith</span>
-                                    <span class="time">3 mins ago</span>
-                                </span>
-                                <span class="message">
-                                    Film festivals used to be do-or-die moments for movie makers. They were
-                                    where...
-                                </span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <div class="text-center">
-                                <a class="dropdown-item">
-                                    <strong>See All Alerts</strong>
-                                    <i class="fa fa-angle-right"></i>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</header> --}}
+<header class="pc-header ">
+    <div class="header-wrapper">
+        <div class="mr-auto pc-mob-drp">
+            <ul class="list-unstyled">
+                <li class="dropdown pc-h-item">
+                    <a class=" pc-head-link dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#"
+                        role="button" aria-haspopup="false" aria-expanded="false">
+                        <i class="material-icons-two-tone">search</i>
+                        <input type="search" class="form-control border-0 shadow-none" placeholder="Search here. . .">
+                    </a>
                 </li>
             </ul>
-        </nav>
+        </div>
+        <div class="ml-auto">
+            <ul class="list-unstyled">
+                <li class="dropdown pc-h-item ">
+                    <a class="pc-head-link dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#"
+                        role="button" aria-haspopup="false" aria-expanded="false">
+                        <img src="{{ asset('backend/Kit_Template/assets/images/user/avatar-2.jpg') }}"
+                            alt="user-image" class="user-avtar">
+                        <span>
+                            <span class="user-name">Joseph William</span>
+                            <span class="user-desc">Administrator</span>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right pc-h-dropdown">
+                        <!--Account-->
+                        <a href="#!" class="dropdown-item">
+                            <i class="material-icons-two-tone">account_circle</i>
+                            <span>My Account</span>
+                        </a>
+                        <!--Setting-->
+                        <a href="#!" class="dropdown-item">
+                            <i class="material-icons-two-tone">settings</i>
+                            <span>Settings</span>
+                        </a>
+                        <!--Support-->
+                        <a href="#!" class="dropdown-item">
+                            <i class="material-icons-two-tone">support</i>
+                            <span>Support</span>
+                        </a>
+                        <!--Log out-->
+                        <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();">
+                            <i class="material-icons-two-tone">chrome_reader_mode</i>
+                            <span>Logout</span>
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
-<!-- /top navigation -->
+</header>
+<!-- [ Header ] end -->

@@ -3,28 +3,26 @@
 
 <head>
     <title>E-SHOP || Login Page</title>
-    <!--Login-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="{{ asset('backend/assets/login_form/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('backend/login_form/css/style.css') }}">
 
 </head>
-{{-- @section('content') --}}
 
-<body class="img js-fullheight" style="background-image: url({{ asset('backend/assets/login_form/images/bg.jpg') }});">
-    {{-- <section>class="img js-fullheight" style="background-image: url({{ asset('backend/assets/login_form/images/bg.jpg') }});"> --}} <section class="ftco-section">
+<body class="img js-fullheight" style="background-image: url({{ asset('backend/login_form/images/bg.jpg') }});">
+    <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center mb-5">
-                    <h1 class="heading-section">{{ __('Login to your account') }}</h1>
+                    <h1 class="heading-section card-header">{{ __('Login to your account') }}</h1>
                 </div>
             </div>
             <!---->
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-4">
-                    <div class="login-wrap p-0">
+                    <div class="login-wrap p-0 card-body">
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
                             <!--Email-->
@@ -61,7 +59,7 @@
                                 <div class="w-50 text-md-left">
                                     <label class="checkbox-wrap checkbox-primary ">Remember Me
                                         <input class="form-check-input" type="checkbox" name="remember" id="remember"
-                                            {{ old('remember') ? 'checked' : '' }}>
+                                            {{-- {{ old('remember') ? 'checked' : '' }} --}} checked>
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
@@ -79,20 +77,10 @@
             </div>
         </div>
     </section>
-
-    {{-- @endsection --}}
-    <!--Login -->
-    {{-- <script src="{{ asset('backend/assets/login_form/js/jquery.min.js') }}"></script>
-    <script src="{{ asset('backend/assets/login_form/js/popper.js') }}"></script>
-    <script src="{{ asset('backend/assets/login_form/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('backend/assets/login_form/js/main.js') }}"></script> --}}
-    {{-- </body>
-
-</html> --}}
-    <script src="{{ asset('backend/assets/login_form/js/jquery.min.js') }}"></script>
-    <script src="{{ asset('backend/assets/login_form/js/popper.js') }}"></script>
-    <script src="{{ asset('backend/assets/login_form/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('backend/assets/login_form/js/main.js') }}"></script>
+    <script src="{{ asset('backend/login_form/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('backend/login_form/js/popper.js') }}"></script>
+    <script src="{{ asset('backend/login_form/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('backend/login_form/js/main.js') }}"></script>
 </body>
 
 </html>
