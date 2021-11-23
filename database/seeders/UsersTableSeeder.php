@@ -15,23 +15,24 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
+        DB::table('users')->truncate();
         $data = array(
             //admin
             array(
-                'fullname' => 'Employee',
-                'username' => 'Employee',
-                'email' => 'employee@gmail.com',
-                'password' => Hash::make('employee'),
-                'role' => 'employee',
+                'fullname' => 'admin',
+                'username' => 'admin',
+                'email' => 'admin@gmail.com',
+                'password' => Hash::make('admin'),
+                'role' => 'admin',
                 'status' => 'active'
             ),
             //user
             array(
-                'fullname' => 'Customer',
-                'username' => 'Customer',
-                'email' => 'customer@gmail.com',
-                'password' => Hash::make('customer'),
-                'role' => 'customer',
+                'fullname' => 'user',
+                'username' => 'user',
+                'email' => 'user@gmail.com',
+                'password' => Hash::make('user'),
+                'role' => 'user',
                 'status' => 'active'
             ),
         );
